@@ -1,8 +1,30 @@
-
+header{
+  border-color: blue;
+  color: antiquewhite
+}
   body {
     color: black;
-    background-color: #d8da3d }
-h1{color:red}
+    background-color: #4b4545 }
+h1{color:rgb(0, 0, 0)}
 
-img {width: 400;
-     height: 341}
+.Logo img{
+  
+  width: 5%;
+  height: 5%;
+}
+.contato div img{
+  
+  width: 10%;
+  height: 10%;
+}
+
+.container_publicacao div{ 
+  width: 30%; 
+  height: 30%; 
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  margin: 10px;
+
+
+ }
+
