@@ -2,17 +2,18 @@
 <html lang="pt-br">
 
 <head>
-<link rel="stylesheet" href="config.css">
+
     <meta charset="UFT-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rn Pets</title>
-    <script src="slide.js" defer></script>
+    
 
 
 </head>
 
-<body>
+<body >
+
     <header> 
         <Div class="logo">
             <img src="logo.png" alt="logo" >
@@ -22,53 +23,78 @@
             <li> <a href="">Produtos</a></li>
             <li> <a href="">Sobre</a></li>
             
-        </ul>
-
-
-        
+        </ul>             
 
     </header>
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name="btn_radio" id="radio1">
-            <input type="radio" name="btn_radio" id="radio2">
-            <input type="radio" name="btn_radio" id="radio3">
+
+
+    <section class="section_form centralizar" id="section_id">
+        
+        <section>
+            <div class="form_fild">
+                <div><label>Email</label></div>
+                <input type="email" name="email" id="email_id" onchange="OnchangeEmail()" placeholder="seu@email.com">
+                <div class="error" id="email_obrigatorio_id">e-mail Obrigatorio</div>
+                <div class="error" id="email_invalido_id">e-mail Invalido</div>
             
-            <div class="slide-box primeiro" >
-                <img class="img-desktop" src="slide_desktop1.jpg" alt="slide1">
-                <img class="img-mobile" src="slide_mob1.jpg" alt="slide1">
-
             </div>
-
-            <div class="slide-box" >
-                <img class="img-desktop" src="slide_desktop2.jpg" alt="slide2">
-                <img class="img-mobile" src="slide_mob2.jpg" alt="slide2">
-
-            </div>
-
-            <div class="slide-box" >
-                <img class="img-desktop" src="slide_desktop3.jpg" alt="slide3">
-                <img class="img-mobile" src="slide_mob3.jpg" alt="slide3">
-
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-
-            </div>
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+    
+            <div class="form_fild">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password_id" onchange="OnchangePassword()" placeholder="Senha">
+                <div class="error" id="senha_obrigatorio_id">senha Obrigatorio</div>
                 
-
+            </div>
+            
+            <div>
+                <button type="button" id="recuperar_password_button_id" class="clear" disabled="true" onclick="Recuperar_Senha()">Esqueci a senha</button>
             </div>
 
-        </div>
-    </section>
+            <div>
+                <button type="button" class="solid"  id="login_button_id" disabled="true"  onclick="Login()">Entrar</button>
+            </div>
+           
+            <div>
+                <button type="button" class="outline" onclick="ShowLoading()" >Registrar</button>
+            </div>
+           
+            
+        </section>
+        
 
+    </section>
+    
+    
+    
 </body>
+
+
+
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="global.css">
+
+<script src="index.js"></script>
+<script src="validacao.js"></script>
+<script src="loading.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js";></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js";></script>
+<script>
+      
+  const firebaseConfig = {
+    apiKey: "AIzaSyDcb-0A3XuHrtd9RiZrCW-dyCiB9HOVHKU",
+    authDomain: "rnpetsdb.firebaseapp.com",
+    projectId: "rnpetsdb",
+    storageBucket: "rnpetsdb.appspot.com",
+    messagingSenderId: "135699291431",
+    appId: "1:135699291431:web:b0e6bde5ed0a156f3d1d02"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+</script>
+
+
 
 </html>
