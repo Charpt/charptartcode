@@ -9,6 +9,11 @@
   font-size: 32px;
 }
 
+body{
+  background-color: #0e9271;
+  margin: 0;
+  height: 100vh;
+}
 
 button:active{
     opacity: 0.8;
@@ -16,6 +21,7 @@ button:active{
   button[disabled]{
     opacity: 0.7;
   }
+  
 .centralizar{
   display: flex;
   justify-content: center;
@@ -44,4 +50,17 @@ button:active{
     color: white;
     background-color: red;
     display: none;
+  }
+  .form_fild{
+    margin-bottom: 10px;
+  }
+
+  input,button{
+    color: black;
+    padding: 10px;
+    
+    width: -webkit-fill-available;
+  }
+  form{
+    width: 300px;
   }
