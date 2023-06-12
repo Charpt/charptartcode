@@ -12,36 +12,53 @@
 
 </head>
 
-<body class="centralizar">
+<body >
 
-    <form>
-        <div class="form_fild">
-            <div><label>Email</label></div>
-            <input type="email" name="email" id="email_id" onchange="OnchangeEmail()" placeholder="seu@email.com">
-            <div class="error" id="email_obrigatorio_id">e-mail Obrigatorio</div>
-            <div class="error" id="email_invalido_id">e-mail Invalido</div>
-        
-        </div>
+    
 
-        <div class="form_fild">
-            <div><label>Senha</label></div>
-            <input type="password" name="password" id="password_id" onchange="OnchangePassword()" placeholder="Senha">
-            <div class="error" id="senha_obrigatorio_id">senha Obrigatorio</div>
+    <div class="centralizar">
+        <form>
+            <div><label class="titulo_pagina">RN PETS</label></div>
+            <div><label class="sub_titulo_pagina">Ponto de venda</label></div>
+            <br>
+        </form>
+    </div>  
+
+<section class="centralizar">
+    <section>
+        <form>
+            <div class="form_fild">
+                <div><label>Email</label></div>
+                <input type="email" name="email" id="email_id" onchange="OnchangeEmail()" placeholder="seu@email.com">
+                <div class="error" id="email_obrigatorio_id">e-mail Obrigatorio</div>
+                <div class="error" id="email_invalido_id">e-mail Invalido</div>
             
-        </div>
-        
-        <div>
-            <button type="button" id="recuperar_password_button_id" class="clear" disabled="true" onclick="Recuperar_Senha()">Esqueci a senha</button>
-        </div>
+            </div>
+    
+            <div class="form_fild">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password_id" onchange="OnchangePassword()" placeholder="Senha">
+                <div class="error" id="senha_obrigatorio_id">senha Obrigatorio</div>
+                
+            </div>
+            
+            <div>
+                <button type="button" id="recuperar_password_button_id" class="clear" disabled="true" onclick="Recuperar_Senha()">Esqueci a senha</button>
+            </div>
+    
+            <div>
+                <button type="button" class="solid"  id="login_button_id" disabled="true"  onclick="Login()">Entrar</button>
+            </div>
+           
+            <div>
+                <button type="button" class="outline" onclick=" Registrar()" >Registrar</button>
+            </div>
+        </form>
+    </section>
+</section>
 
-        <div>
-            <button type="button" class="solid"  id="login_button_id" disabled="true"  onclick="Login()">Entrar</button>
-        </div>
-       
-        <div>
-            <button type="button" class="outline" onclick=" Registrar()" >Registrar</button>
-        </div>
-    </form>
+
+    
             
     
     

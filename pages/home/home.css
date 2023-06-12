@@ -1,9 +1,38 @@
 body{
     height: 100vh;
 }
-header{
-    text-align: right;
+
+
+ol {
+list-style-type: none;
+background: white;
+width: 100%;
+height: max-content;
+padding: 5px;
 }
-header button{
-    width: auto;
+
+ol li {
+    background: white;
+    margin: 10px;
+    background: rgb(19, 139, 155);
+}
+ol li:hover{
+    opacity: 0.8;
+}
+
+ol li.status_ativo{
+    border: 2px solid green;
+    
+}
+ol li.status_desativado{
+    border: 2px solid grey;
+    
+}
+p{
+    margin-left: 4px;
+
+}
+
+.response{
+    position: relative;
 }
